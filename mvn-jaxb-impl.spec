@@ -4,12 +4,14 @@
 #
 Name     : mvn-jaxb-impl
 Version  : 2.2.3.1
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
 Source0  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
-Source1  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
-Source2  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
-Source3  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
+Source1  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.jar
+Source2  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.pom
+Source3  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
+Source4  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
+Source5  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CDDL-1.1 GPL-2.0-only
@@ -35,14 +37,20 @@ data components for the mvn-jaxb-impl package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
 
 
 %files
@@ -50,5 +58,7 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-i
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.jar
+/usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.pom
 /usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
 /usr/share/java/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom
