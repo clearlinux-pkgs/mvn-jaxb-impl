@@ -4,7 +4,7 @@
 #
 Name     : mvn-jaxb-impl
 Version  : 2.2.3.1
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
 Source0  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
 Source1  : https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.jar
